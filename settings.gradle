@@ -1,0 +1,8 @@
+rootProject.name = "appsugar-security";
+
+include("appsugar-security-parent")
+include("appsugar-security-form")
+include("appsugar-security-cas")
+include("appsugar-security-cas-oauth2")
+
+
