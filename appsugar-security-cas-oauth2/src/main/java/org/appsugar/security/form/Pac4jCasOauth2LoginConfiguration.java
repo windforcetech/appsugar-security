@@ -41,6 +41,7 @@ public class Pac4jCasOauth2LoginConfiguration {
 		String loginUrl = env.getProperty(Constants.CAS_OAUTH2_LOGIN_URL_KEY);
 		logger.debug("cas oauth2 login url is {}", loginUrl);
 		CasOauth2Client client = new CasOauth2Client();
+		client.setCasOAuthUrl(loginUrl);
 		client.setKey(env.getProperty(Constants.CAS_OAUTH2_KEY));
 		client.setSecret(env.getProperty(Constants.CAS_OAUTH2_SECRET_KEY));
 		clients.addClient(client);
